@@ -5,6 +5,6 @@
 
 <script>
 window.matchMedia('(orientation:portrait)').addEventListener("change", () => {
-  document.getElementById('check').innerHTML = `{window.innerWidth}x{window.innerHeight}`; 
+  document.getElementById('check').innerHTML = window.innerWidth + 'x' + window.innerHeight; 
 });
 </script>
