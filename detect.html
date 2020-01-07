@@ -7,7 +7,7 @@
 <script>
 document.getElementById('check').innerHTML = window.innerWidth + 'x' + window.innerHeight;
   
-window.matchMedia('(orientation:portrait)').addEventListener("change", () => {
+window.addEventListener("orientationchange", () => {
   document.getElementById('check').innerHTML = window.innerWidth + 'x' + window.innerHeight; 
 });
 </script>
