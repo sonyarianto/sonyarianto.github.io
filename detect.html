@@ -1,0 +1,9 @@
+<script>
+matchMedia('(orientation:portrait)').addEventListener("change", () => {
+  document.getElementById('check').innerHTML = `{window.innerClientWidth}x{windows.innerClientHeight}`; 
+});
+</script>
+
+<div id="check"></div>
+
+
