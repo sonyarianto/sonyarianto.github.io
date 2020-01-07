@@ -4,7 +4,7 @@
 
 
 <script>
-matchMedia('(orientation:portrait)').addEventListener("change", () => {
+window.matchMedia('(orientation:portrait)').addEventListener("change", () => {
   document.getElementById('check').innerHTML = `{window.innerWidth}x{window.innerHeight}`; 
 });
 </script>
