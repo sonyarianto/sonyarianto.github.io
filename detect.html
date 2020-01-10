@@ -5,9 +5,9 @@
 <div id="check"></div>
 
 <script>
-document.getElementById('check').innerHTML = window.innerWidth + 'x' + window.innerHeight;
+document.getElementById('check').innerHTML = 'window.innerWidth x window.innerHeight<br>' + window.innerWidth + 'x' + window.innerHeight;
   
 window.addEventListener("resize", () => {
-  document.getElementById('check').innerHTML = window.innerWidth + 'x' + window.innerHeight; 
+  document.getElementById('check').innerHTML = 'window.innerWidth x window.innerHeight<br>' + window.innerWidth + 'x' + window.innerHeight;
 });
 </script>
