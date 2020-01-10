@@ -9,10 +9,14 @@ var whInfo = '<span style="font-size:x-large;">window.innerWidth x window.innerH
 
 whInfo = whInfo + '<br><br><br>' + '<span style="font-size:x-large;">window.screen.width x window.screen.height</span><br>' + window.screen.width + 'x' + window.screen.height;
 whInfo = whInfo + '<br><br><br>' + '<span style="font-size:x-large;">window.screen.availWidth x window.screen.availHeight</span><br>' + window.screen.availWidth + 'x' + window.screen.availHeight;
+
+var wh = function (msg) {
+  return msg;
+}
   
-document.getElementById('check').innerHTML = whInfo;
+document.getElementById('check').innerHTML = wh(whInfo);
   
-window.addEventListener("resize", () => {
-  document.getElementById('check').innerHTML = whInfo;
-});
+window.addEventListener("resize", (whInfo) => {
+  document.getElementById('check').innerHTML = wh(whInfo);
+}, whInfo);
 </script>
