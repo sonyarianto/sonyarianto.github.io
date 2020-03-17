@@ -1,0 +1,21 @@
+<style>
+  #check {width:100%;font-size:xxx-large;margin:0 auto;text-align:center;}
+</style>
+
+<div id="check"></div>
+
+<script>
+let whInfo = '<span style="font-size:x-large;">window.innerWidth x window.innerHeight</span><br>' + window.innerWidth + 'x' + window.innerHeight;
+whInfo = whInfo + '<br><br><br>' + '<span style="font-size:x-large;">window.screen.width x window.screen.height</span><br>' + window.screen.width + 'x' + window.screen.height;
+whInfo = whInfo + '<br><br><br>' + '<span style="font-size:x-large;">window.screen.availWidth x window.screen.availHeight</span><br>' + window.screen.availWidth + 'x' + window.screen.availHeight;
+
+document.getElementById('check').innerHTML = whInfo;
+  
+window.addEventListener("resize", () => {
+  let whInfo = '<span style="font-size:x-large;">window.innerWidth x window.innerHeight</span><br>' + window.innerWidth + 'x' + window.innerHeight;
+  whInfo = whInfo + '<br><br><br>' + '<span style="font-size:x-large;">window.screen.width x window.screen.height</span><br>' + window.screen.width + 'x' + window.screen.height;
+  whInfo = whInfo + '<br><br><br>' + '<span style="font-size:x-large;">window.screen.availWidth x window.screen.availHeight</span><br>' + window.screen.availWidth + 'x' + window.screen.availHeight;
+
+  document.getElementById('check').innerHTML = whInfo;
+});
+</script>
